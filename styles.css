@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --font-color:#010101;
+    --bg-color:#ffffff;
+    --font-hover-red:#c50e0e;
+    --third-btn:#313639;
+}
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+.root-container{
+    width: 100%;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 26px 140px;
+    gap: 440px;
+}
+header img{
+    height: 27px;
+}
+header .menu-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 4px;
+    padding: 2px 4px;
+}
+header .menu-icon:hover{
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+}
+header .menu-icon i{
+    font-size: 28px;
+}
+
+.banner-container{
+    width: 100%;
+    height: 64vh;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/RD-2023-Homepage-Banner-WW-TaycanPushGTS-KW19/normal/142eda67-f30b-11ed-8103-005056bbdc38;sM;twebp/porsche-normal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.banner-container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--bg-color);
+    padding: 0 60px 40px 0;
+    transition: 0.3s ease-in-out;
+}
+.banner-container .content h2{
+    font-size: 44px;
+    font-weight: 500;
+}
+.banner-container .content h6{
+    font-size: 24px;
+    font-weight: 500;
+}
+.banner-container .content:hover{
+    cursor: pointer;
+    color: var(--font-hover-red);
+}
+
+.models{
+    width: 100%;
+}
+.models .section-header{
+    width: 100%;
+    display: flex;
+    padding: 30px 0 30px 80px;
+}
+.models .section-header h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.models .img-container-top{
+    width: 100%;
+    display: flex;
+}
+.models .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.models .content .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 14px 0 0 24px;
+    color: var(--bg-color);
+}
+.models .content .details h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.models .content .details h6{
+    font-size: 18px;
+    font-weight: 500;
+}
+.models .content .buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 0 20px 24px;
+}
+.models .content .buttons  i{
+    font-size: 20px;
+}
+.models .content .buttons button:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 21px;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    gap: 4px;
+}
+.models .content .buttons button:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 21px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    gap: 4px;
+}
+.models .content .buttons button:nth-child(1):hover{
+    background-color: var(--font-hover-red);
+    color: #fff;
+}
+.models .content .buttons button:nth-child(2):hover{
+    border-color: var(--font-hover-red);
+    color: var(--font-hover-red);
+}
+.models .img-container-top .img-card-one{
+    width: 100%;
+    height: 360px;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/57ad32c8-ca23-11ec-80ef-005056bbdc38;sJ;twebp;c890;gc/porsche-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.models .img-container-top .img-card-two{
+    width: 100%;
+    height: 360px;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-911/small/3cf76e8c-6694-11e9-80c4-005056bbdc38;sO;twebp;c1693;gc/porsche-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.models .img-container-top .img-card-three{
+    width: 100%;
+    height: 360px;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-taycan/small/094d1c1c-bab0-11e9-80c4-005056bbdc38;sO;twebp;c1693;gc/porsche-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.models .img-container-bottom{
+    width: 100%;
+    display: flex;
+}
+.models .img-container-bottom .img-card-one{
+    width: 100%;
+    height: 360px;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-panamera/small/31077aa2-d337-11ea-80cc-005056bbdc38;sO;twebp;c1693;gc/porsche-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.models .img-container-bottom .img-card-two{
+    width: 100%;
+    height: 360px;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-macan/small/47db3c6d-e3d7-11eb-80d9-005056bbdc38;sM;twebp;c892;gc/porsche-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.models .img-container-bottom .img-card-three{
+    width: 100%;
+    height: 360px;
+    background: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-cayenne/small/2fbf4ab0-ded1-11ed-8101-005056bbdc38;sO;twebp;c1693;gc/porsche-small.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.models .imp-text{
+    width: 100%;
+    display: flex;
+    padding: 16px 0 20px 80px;
+    font-size: 14px;
+}
+.near-you .section-header{
+    width: 100%;
+    display: flex;
+    padding: 30px 0 30px 80px;
+}
+.near-you .section-header h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.near-you .cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.near-you .cards-container img{
+    width: 380px;
+}
+.near-you .cards-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.near-you .cards-container .card .img-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.near-you .cards-container .card .btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.near-you .cards-container .card .btn-container button{
+    padding: 13px 21px;
+    background-color: var(--third-btn);
+    color: var(--bg-color);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+.near-you .cards-container .card .btn-container button i{
+    font-size: 20px;
+}
+.near-you .cards-container .card .btn-container button:hover{
+    background-color: var(--font-hover-red);
+}
+
+.tools .section-header{
+    width: 100%;
+    display: flex;
+    padding: 120px 0 30px 80px;
+}
+.tools .section-header h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.tools .tools-img-container{
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    height: 250px;
+    box-sizing: border-box;
+}
+.tools .tools-img-container .img-card-l{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-compare/normal/4365f64f-2c10-11e7-9f74-0019999cd470;sL;twebp/porsche-normal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tools .tools-img-container .img-card-s-one{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-dealersearch/normal/c365840c-687b-11e7-9717-0019999cd470;sQ;twebp/porsche-normal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tools .tools-img-container .img-card-s-two{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://files.porsche.com/filestore/image/middle-east/none/homepage-teaser-shoppingtools-pds/normal/94ab936b-9704-11e7-b591-0019999cd470;sQ;twebp/porsche-normal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tools .tools-img-container .img-card-s-three{
+    box-sizing: border-box;
+    width:  50%;
+    height: 100%;
+    background-image: url(https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-kontakt/normal/df7cfdaf-9790-11e7-b591-0019999cd470;sQ;twebp/porsche-normal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tools .tools-img-container .img-card-l,
+.tools .tools-img-container .img-card-s-one,
+.tools .tools-img-container .img-card-s-two,
+.tools .tools-img-container .img-card-s-three{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 24px 12px;
+}
+.tools .tools-img-container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bg-color);
+    transition: 0.2s ease-in-out;
+}
+.tools .tools-img-container .text:hover{
+    cursor: pointer;
+    color: var(--font-hover-red);
+}
+.tools .tools-img-container .text i{
+    color: var(--font-hover-red);
+}
+
+
+.social .section-header{
+    width: 100%;
+    display: flex;
+    padding: 80px 0 30px 80px;
+}
+.social .section-header h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.social .img-gallery{
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    box-sizing: border-box;
+    height: 500px;
+    gap: 6px;
+}
+.social .img-gallery .top-g-bottom-section{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.social .img-gallery .top-g-bottom-section .top-card{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 6px;
+    background-image: linear-gradient(#ffffff1c,#ffffff56,#333,#000000);
+}
+.social .img-gallery .top-g-bottom-section .top-card img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.social .img-gallery .top-g-bottom-section .top-card .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    bottom: 15%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14px;
+    padding-top: 14px;
+    color: var(--bg-color);
+    gap: 8px;
+}
+.social .img-gallery .top-g-bottom-section .top-card .middle span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.social .img-gallery .top-g-bottom-section .top-card .middle h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.social .img-gallery .top-g-bottom-section .top-card:hover img{
+    opacity: 0.5;
+}
+.social .img-gallery .top-g-bottom-section .top-card:hover .middle{
+    opacity: 1;
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card:hover img{
+    opacity: 0.5;
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card:hover .middle{
+    opacity: 1;
+}
+
+.social .img-gallery .top-g-bottom-section .bottom-cards{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 6px;
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(#000,#333333);
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    bottom: 80%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14px;
+    padding-top: 14px;
+    color: var(--bg-color);
+    gap: 6px;
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card .middle span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.social .img-gallery .top-g-bottom-section .bottom-cards .card .middle h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.social .img-gallery .bottom-g-top-section{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.social .img-gallery .bottom-g-top-section .top-cards{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 6px;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .middle span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .middle h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .card{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(#000,#333333d8);
+}
+.social .img-gallery .bottom-g-top-section .bottom-card{
+    width: 100%;
+    height: 70%;
+    margin-top: 6px;
+    background-image: linear-gradient(#ffffff1c,#ffffff56,#333,#000000);
+}
+.social .img-gallery .bottom-g-top-section .bottom-card .middle span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.social .img-gallery .bottom-g-top-section .bottom-card .middle h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .card img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .card .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    bottom: 80%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14px;
+    padding-top: 14px;
+    color: var(--bg-color);
+    gap: 6px;
+}
+.social .img-gallery .bottom-g-top-section .bottom-card img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.social .img-gallery .bottom-g-top-section .bottom-card .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    bottom: 15%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14px;
+    padding-top: 14px;
+    color: var(--bg-color);
+    gap: 8px;
+}
+
+.social .img-gallery .bottom-g-top-section .bottom-card:hover img{
+    opacity: 0.3;
+}
+.social .img-gallery .bottom-g-top-section .bottom-card:hover .middle{
+    opacity: 1;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .card:hover img{
+    opacity: 0.3;
+}
+.social .img-gallery .bottom-g-top-section .top-cards .card:hover .middle{
+    opacity: 1;
+}
+
+.discover{
+    margin-bottom: 200px;
+}
+.discover .section-header{
+    width: 100%;
+    display: flex;
+    padding: 80px 0 30px 80px;
+}
+.discover .section-header h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.discover .discover-container{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+.discover .discover-container .card{
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    transition: 0.5s ease-in-out;
+}
+.discover .discover-container .card .img-container{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    border-bottom: 4px solid var(--font-color);
+}
+.discover .discover-container .card .img-container img{
+    min-width: 100%;
+    max-height: 100%;
+}
+.discover .discover-container .card .link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+    border: none;
+}
+.discover .discover-container .card .link i{
+    font-size: 20px;
+    color: var(--font-hover-red);
+}
+.discover .discover-container .card .link span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.discover .discover-container .card:hover .img-container{
+    border-bottom: 4px solid var(--font-hover-red);
+    cursor: pointer;
+}
+.discover .discover-container .card:hover .link{
+    color: var(--font-hover-red);
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+footer .top-section{
+    border-top: 1px solid #313639;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+footer .top-section .service{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 140px;
+}
+footer .top-section .service .block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+footer .top-section .service .block .head{
+    font-size: 20px;
+    font-weight: 500;
+}
+footer .top-section .service .block .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 20px;
+}
+footer .top-section .media{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+footer .top-section .media .share-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .top-section .media .share-btn button{
+    padding: 13px 165px 13px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bg-color);
+    background-color: var(--third-btn);
+    border: none;
+}
+footer .top-section .media .share-btn button:hover{
+    cursor: pointer;
+    background-color: var(--font-hover-red);
+}
+footer .top-section .media .share-btn button span{
+    white-space: nowrap;
+}
+footer .top-section .media .share-btn button i{
+    font-size: 20px;
+}
+footer .top-section .media .media-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .top-section .media .media-icons .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+}
+footer .top-section .media .media-icons .content span{
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 60%;
+    color: var(--third-btn);
+}
+footer .top-section .media .media-icons .content .row{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+footer .top-section .media .media-icons .content .row .icon{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: var(--third-btn);
+    color: var(--bg-color);
+}
+footer .top-section .media .media-icons .content .row .icon:nth-child(1):hover{
+    background-color: #3b5998;
+}
+footer .top-section .media .media-icons .content .row .icon:nth-child(2):hover{
+    background-color: #CD201F;
+}
+footer .top-section .media .media-icons .content .row .icon:nth-child(3):hover{
+    background-color: #c8232c;
+}
+footer .top-section .media .media-icons .content .row .icon:nth-child(4):hover{
+    background-color: #0A66C2;
+}
+footer .top-section .media .media-icons .content .row .icon:nth-child(5):hover{
+    background-color: #E4405F;
+}
+
+.footer{
+    width: 100%;
+    padding: 30px 80px 80px 80px;
+    background-color: #191f22;
+}
+.footer .bottom-section{
+    width: 100%;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.footer .bottom-section .select-country{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    color: var(--bg-color);
+}
+.footer .bottom-section .select-country .inp-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.footer .bottom-section .select-country h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.footer .bottom-section .select-country select{
+    padding: 16px 60px 16px 14px;
+    width: 260px;
+    font-size: 16px;
+    background-color: var(--third-btn);
+    color: var(--bg-color);
+    border: none;
+    outline: none;
+}
+.footer .bottom-section .select-country .disable{
+    color: rgba(255, 255, 255, 0.4);
+}
+.footer .copyrights{
+    font-size: 16px;
+    color: var(--bg-color);
+    line-height: 24px;
+}
+.footer .copyrights a{
+    color: var(--bg-color);
+}
+.footer .copyrights a:hover{
+    color: var(--font-hover-red);
+}
